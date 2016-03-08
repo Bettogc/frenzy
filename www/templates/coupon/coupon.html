@@ -206,55 +206,6 @@ hr     {
 		</div>
 		<div class="pageOffertsBlanckDiv"></div>
 		<!--**************  BOX RED STYLE MISSING OFFERTS  ***************-->
-		<!--**********  TRIANGLES TOP  **********-->
-		<!--
-		<div class="row">
-			<p class="arrow-up-left2"></p><p class="arrow-up2"></p>
-			<p class="arrow-up2"></p><p class="arrow-up2"></p>
-			<p class="arrow-up2"></p><p class="arrow-up2"></p>
-			<p class="arrow-up2"></p><p class="arrow-up2"></p>
-			<p class="arrow-up2"></p><p class="arrow-up2"></p>
-			<p class="arrow-up2"></p><p class="arrow-up2"></p>
-			<p class="arrow-up2"></p><p class="arrow-up2"></p>
-			<p class="arrow-up2"></p><p class="arrow-up2"></p>
-			<p class="arrow-up2"></p><p class="arrow-up2"></p>
-			<p class="arrow-up2"></p><p class="arrow-up2"></p>
-			<p class="arrow-up2"></p><p class="arrow-up2"></p>
-			<p class="arrow-up2"></p><p class="arrow-up2"></p>
-			<p class="arrow-up2"></p><p class="arrow-up2"></p>
-		</div>-->
-		<!--**********  PURPLE BOX  **********-->
-		<!-- Not found Content -->
-	<!--	<div class="pageOffertsBoxRedStyle">-->
-			<!-- **********  CLOCK ICON  **********-->
-		<!--	<h4 class="home clownStyle">
-				P
-			</h4>
-			<h4 class="open_sans pageStartBoxPurpleTitle" style="margin-top:-20px;">
-			   ¿No encontraste lo que
-			</h4>
-			<h4 class="open_sans pageStartBoxPurpleTitle ">
-				quieres.?
-			</h4>
-		</div>-->
-		<!--**********  TRIANGLES DOWN  **********-->
-	<!--	<div class="row">
-			<p class="arrow-dow-left2"></p><p class="arrow-dow2"></p>
-			<p class="arrow-dow2"></p><p class="arrow-dow2"></p>
-			<p class="arrow-dow2"></p><p class="arrow-dow2"></p>
-			<p class="arrow-dow2"></p><p class="arrow-dow2"></p>
-			<p class="arrow-dow2"></p><p class="arrow-dow2"></p>
-			<p class="arrow-dow2"></p><p class="arrow-dow2"></p>
-			<p class="arrow-dow2"></p><p class="arrow-dow2"></p>
-			<p class="arrow-dow2"></p><p class="arrow-dow2"></p>
-			<p class="arrow-dow2"></p><p class="arrow-dow2"></p>
-			<p class="arrow-dow2"></p><p class="arrow-dow2"></p>
-			<p class="arrow-dow2"></p><p class="arrow-dow2"></p>
-			<p class="arrow-dow2"></p><p class="arrow-dow2"></p>
-			<p class="arrow-dow2"></p><p class="arrow-dow2"></p>
-			<p class="arrow-dow2"></p><p class="arrow-dow2"></p>
-		</div>-->
-		<!--*************************************************** -->
 		<div ng-repeat="super in cupons[0]  | filter: {oferta : 'noHay'}">
 			<div class="open_sans boxbox">
 				<p class="savedPageNoItemBlankSpace">
@@ -281,7 +232,7 @@ hr     {
 								B
 							</spam>
 						</a>
-						<a class="item" id = "{{s.cel}}" ng-click="call({{s.cel}})" target="_blank" style="text-align:right; color:silver;">
+						<a class="item" id = "{{s.cel}}" ng-click="call({{s.cel}})" target="_blank" style="text-align:right; color:silver;" ng-href="tel:{{s.cel}}">
 						{{s.call}}
 							<spam class="home pageOffertsPopoverIconsDescrpition">
 							  {{s.callIcon}}
@@ -309,7 +260,7 @@ hr     {
 					<div>
 						<div ng-click= "Analytics('facebook','coupon')">
 							<img  class="secondPopoverFacebookIcon" src="img/facebookicon.png" alt="label">
-							<a class="secondPopoverFacebookTitle" href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir); window.open('http://www.facebook.com/share.php?u=http://frenzy.com.gt/','_blank');" style="text-decoration:none;">Amigos de facebook</a>
+							<a class="secondPopoverFacebookTitle" href="javascript:var dir=window.document.URL;var tit=window.document.title;var tit2=encodeURIComponent(tit);var dir2= encodeURIComponent(dir); window.open=cordova.InAppBrowser.open('http://www.facebook.com/share.php?u=http://frenzy.com.gt/','_blank', 'location=yes');" style="text-decoration:none;">Amigos de facebook</a>
 						</div>
 					  <div style="margin-top:25px;" onclick="window.open('sms:?body=www.Frenzy.com', '_system');" ng-click= "Analytics('message','coupon')">
 							<p class="home secondPopoverMailIcon">

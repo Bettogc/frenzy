@@ -620,9 +620,6 @@ $scope.display = OurFavorites.all();
 		Parse.Analytics.track("CallsPromotion", Dimensions);
 		var a = cell.toString();
 		var b = 'tel:'
-		var callPhone = b + a;
-
-		window.open(callPhone)
 
 	}
 	// *************** URL BROWSER SHOP FUNCTION ***************
@@ -777,7 +774,6 @@ $scope.display = OurFavorites.all();
 		alert("call 2")
 		a = cell.toString();
 		b = 'tel:'
-		window.open(b+a);
 	}
 	// *************** URL BROWSER SHOP FUNCTION ***************
 	$scope.shopUrl = function(Url,id,name){
